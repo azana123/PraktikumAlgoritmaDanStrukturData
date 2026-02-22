@@ -36,6 +36,7 @@ public class Mahasiswa09 {
             return "Kinerja kurangss";
         }
     }
+
     public Mahasiswa09() {
     }
 
