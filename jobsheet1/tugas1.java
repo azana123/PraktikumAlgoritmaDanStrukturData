@@ -18,7 +18,7 @@ public class tugas1 {
         System.out.print("Masukan Kode Plat: ");
         char input = sc.next().charAt(0);    
         int indexPlat = cariIndexPlat(input);
-         for (int i = 0; i < KOTA[indexPlat].length; i++) {
+        for (int i = 0; i < KOTA[indexPlat].length; i++) {
             if(KOTA[i] != null){
                 System.out.print(KOTA[indexPlat][i]);
             }else{
