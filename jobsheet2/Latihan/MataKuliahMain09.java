@@ -1,4 +1,4 @@
-package PraktikumAlgoritmaDanStrukturData.jobsheet2;
+package PraktikumAlgoritmaDanStrukturData.jobsheet2.Latihan;
 
 public class MataKuliahMain09 {
     public static void main(String[] args) {

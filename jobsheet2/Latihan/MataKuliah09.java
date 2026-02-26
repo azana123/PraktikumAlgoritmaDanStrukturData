@@ -1,4 +1,4 @@
-package PraktikumAlgoritmaDanStrukturData.jobsheet2;
+package PraktikumAlgoritmaDanStrukturData.jobsheet2.Latihan;
 
 public class MataKuliah09 {
     String kodeMK;
