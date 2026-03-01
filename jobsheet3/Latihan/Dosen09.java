@@ -1,4 +1,5 @@
 package PraktikumAlgoritmaDanStrukturData.jobsheet3.Latihan;
+import java.util.Scanner;
 
 public class Dosen09 {
     String kode;
@@ -18,6 +19,18 @@ public class Dosen09 {
         System.out.println("Nama          : " + nama);
         System.out.println("Jenis Kelamin : " + (jenisKelamin ? "Pria" : "Wanita"));
         System.out.println("Usia          : " + usia);
-        System.out.println("------------------------------");
+        System.out.println("=========================================");
+    }
+
+    void inputData(Scanner sc) {
+        System.out.print("Kode dosen\t: ");
+        kode = sc.nextLine();
+        System.out.print("Nama dosen\t: ");
+        nama = sc.nextLine();
+        System.out.print("Jenis Kelamin (true = pria, false = wanita): ");
+        jenisKelamin = sc.nextBoolean();
+        System.out.print("Usia\t: ");
+        usia = sc.nextInt();
+        sc.nextLine();
     }
 }
