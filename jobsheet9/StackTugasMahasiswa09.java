@@ -31,7 +31,7 @@ public class StackTugasMahasiswa09 {
     }
 
     public void push (Mahasiswa09 mhs) {
-        if (isFull()) {
+        if (!isFull()) {
             top++;
             stack[top] = mhs;
         }else {
@@ -40,7 +40,7 @@ public class StackTugasMahasiswa09 {
     }
 
     public Mahasiswa09 pop() {
-        if (isEmpty()) {
+        if (!isEmpty()) {
             Mahasiswa09 m = stack[top];
             top--;
             return m;
@@ -51,7 +51,7 @@ public class StackTugasMahasiswa09 {
     }
 
     public Mahasiswa09 peek(){
-        if (isEmpty()) {
+        if (!isEmpty()) {
             return stack[top];
         }else {
             System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan");

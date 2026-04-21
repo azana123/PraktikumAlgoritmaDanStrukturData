@@ -13,16 +13,16 @@ public class MahasiswaDemo09 {
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
-            System.out.println("Pilih: ");
+            System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
             switch (pilih) {
                 case 1 :
-                    System.out.println("Nama: ");
+                    System.out.print("Nama: ");
                     String nama = scan.nextLine();
-                    System.out.println("NIM: ");
+                    System.out.print("NIM: ");
                     String nim = scan.nextLine();
-                    System.out.println("Kelas: ");
+                    System.out.print("Kelas: ");
                     String kelas = scan.nextLine();
                     Mahasiswa09 mhs = new Mahasiswa09(nama, nim, kelas);
                     stack.push(mhs);
