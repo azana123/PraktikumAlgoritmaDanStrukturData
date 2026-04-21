@@ -45,10 +45,10 @@ public class DataPeminjaman {
         }
     }
 
-    public static void cariByNIM(Peminjaman[] data, String nim) {
+    public static void cariByNama(Peminjaman[] data, String nama) {
         boolean ketemu = false;
         for (int i = 0; i < data.length; i++) {
-            if (data[i].mhs.nim.equals(nim)) {
+            if (data[i].mhs.nama.equalsIgnoreCase(nama)) {
                 data[i].tampilPeminjaman();
                 ketemu = true;
             }

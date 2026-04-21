@@ -42,9 +42,9 @@ public class PeminjamanMain {
                     System.out.println("==============================");
                     break;
                 case 5:
-                    System.out.print("Masukkan NIM: ");
+                    System.out.print("Masukkan Nama: ");
                     String nim = sc.next();
-                    DataPeminjaman.cariByNIM(listPinjam, nim);
+                    DataPeminjaman.cariByNama(listPinjam, nim);
                     break;
                 case 0:
                     System.out.println("Keluar...");
@@ -61,7 +61,7 @@ public class PeminjamanMain {
         System.out.println("2. Tampilkan Buku");
         System.out.println("3. Tampilkan Peminjaman");
         System.out.println("4. Urutkan Berdasarkan Denda");
-        System.out.println("5. Cari Berdasarkan NIM");
+        System.out.println("5. Cari Berdasarkan Nama");
         System.out.println("0. Keluar");
     }
 }
