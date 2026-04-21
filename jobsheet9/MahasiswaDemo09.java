@@ -13,6 +13,8 @@ public class MahasiswaDemo09 {
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("5. Melihat Tugas Terbawah");
+            System.out.println("6. Melihat Tugas Yang Sudah Dikumpulkan");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
@@ -36,12 +38,14 @@ public class MahasiswaDemo09 {
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
                 case 3 :
-                    Mahasiswa09 lihat = stack.peek();
-                    if (lihat != null) {
-                        System.out.println("Tugas terakhir dikumpulkan oleh: " + lihat.nama);
+                    Mahasiswa09 lihatTerakhir = stack.peek();
+                    if (lihatTerakhir != null) {
+                        System.out.println("Tugas terakhir dikumpulkan oleh: " + lihatTerakhir.nama);
                     }
                     break;
                 case 4 :
@@ -49,10 +53,20 @@ public class MahasiswaDemo09 {
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
                     break;
+                case 5:
+                    Mahasiswa09 lihatPertama = stack.peek();
+                    if (lihatPertama != null) {
+                        System.out.println("Tugas pertamakali dikumpulkan oleh: " + lihatPertama.nama);
+                    }
+                    break;
+                case 6:
+                    int lihatJmlPengumpul = stack.JumlahTugasTerkumpul();
+                    System.out.println("Jumlah tugas yang sudah dikumpulkan adalah: " + lihatJmlPengumpul);
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid");
                     break;
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 6);
     }
 }
